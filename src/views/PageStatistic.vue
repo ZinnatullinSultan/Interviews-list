@@ -31,7 +31,7 @@ const chartOptions = ref(null)
 onMounted(async () => {
   interviews.value = await getAllInterviews()
   chartData.value = setChartData()
-  chartOptions.value = setChartOptions()
+  // chartOptions.value = setChartOptions()
 })
 
 const getAllInterviews = async <T extends IInterview>(): Promise<T[]> => {
